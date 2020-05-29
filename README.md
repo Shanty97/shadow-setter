@@ -14,3 +14,14 @@
 - HTML
 - CSS + CSS Variables
 - JavaScript
+
+## Screenshots
+
+- Web
+<img src="https://github.com/Shanty97/shadow-setter/blob/master/images/documentation/one.PNG" width="500px" />
+
+- Responsive
+<img src="https://github.com/Shanty97/shadow-setter/blob/master/images/documentation/two.PNG" width="300px" />
+
+- Mobile
+<img src="https://github.com/Shanty97/shadow-setter/blob/master/images/documentation/three.PNG" width="300px" />
