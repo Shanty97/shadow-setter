@@ -22,7 +22,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	margin-left: 2.5rem;
+	margin-left: 2.1rem;
 	font-family: Arial;
 	font-size: 1.5em;
 	font-style: italic;
@@ -30,8 +30,8 @@ body {
 }
 
 .box {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	background-color: var(--box-color, #0DA6E1);
 	box-shadow:
 		calc(var(--x-position, 3)*1px)
@@ -45,7 +45,7 @@ body {
 .sidebar {
 	display: flex;
 	width: 20%;
-	min-width: 130px;
+	min-width: 150px;
 	flex-direction: column;
 	background-color: #000;
 	color: #fff;
@@ -112,4 +112,34 @@ input[type=color] {
 	font-family: inherit;
 	font-weight: 700px;
 	background-color: #ccc;
+	overflow: hidden;
+	
+}
+
+.subtitle {
+	padding: .15rem .1rem;
+}
+
+@media only screen and (max-width: 760px) {
+	#result {
+	text-align: center;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 700px;
+	background-color: #ccc;
+	overflow-x: hidden;
+	/*height: 4rem;*/
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		text-align: left;
+	}	
+	.subtitle {
+		padding: .15rem 0rem;
+	}
+	.box {
+		width: 100px;
+		height: 100px;
+	}
 }

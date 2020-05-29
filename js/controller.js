@@ -7,7 +7,7 @@ function initialSetup() {
 	sp=6;
 	cl='#2d2d2d';
 	query='box-shadow: '+xp+' '+yp+' '+bl+' '+sp+' '+cl;
-	document.getElementById("result").value=query;
+	//document.getElementById("result").value=query;
 	console.log("inside initialSetup",query)	
 }
 window.onload = initialSetup;
@@ -46,4 +46,11 @@ document.querySelector('#generate').addEventListener("click", gens);
 function gens() {
 	document.getElementById("result").value=query;
 	console.log(query);
+	var copyText = document.getElementById("result");
+	copyText.select();
+	copyText.setSelectionRange(0,99999);
+	document.execCommand("copy");
+	console.log(copyText.value);
+	alert("Box-shadow Copied !!");
 }
+
